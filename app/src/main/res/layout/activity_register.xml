@@ -23,7 +23,7 @@
             android:text="Please enter your detail to register this APP"
             android:textAlignment="center"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
-            android:textSize="25dp"/>
+            android:textSize="25sp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:id="@+id/register_textview_full_name"
             android:layout_below="@id/register_text_head"
             android:layout_marginTop="30dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="Full name*"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -54,7 +54,7 @@
             android:id="@+id/register_textview_email"
             android:layout_below="@id/register_enter_full_name"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="Email*"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -77,7 +77,7 @@
             android:id="@+id/register_textview_birthday"
             android:layout_below="@id/register_enter_email"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="Date of birth(dd/mm/yyyy)*"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -102,7 +102,7 @@
             android:id="@+id/register_textview_gender"
             android:layout_below="@id/register_enter_birthday"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="Gender"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -137,7 +137,7 @@
             android:id="@+id/register_textview_mobile"
             android:layout_below="@id/register_enter_gender_group"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="Mobile*"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -159,7 +159,7 @@
             android:id="@+id/register_textview_password"
             android:layout_below="@id/register_enter_mobile"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="Password*"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -182,7 +182,7 @@
             android:id="@+id/register_textview_confirm_password"
             android:layout_below="@id/register_enter_password"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="#555555"
             android:text="confirm password*"
             android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
@@ -197,6 +197,14 @@
             android:text="confirm your password"
             android:padding="6dp"
             android:background="@drawable/boarder"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
 
 
     </RelativeLayout>
