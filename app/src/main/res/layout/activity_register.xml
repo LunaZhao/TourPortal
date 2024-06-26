@@ -1,9 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@color/light_gray">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_text_head"
+            android:layout_marginTop="30dp"
+            android:text="Please enter your detail to register this APP"
+            android:textAlignment="center"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_full_name"
+            android:layout_below="@id/register_text_head"
+            android:layout_marginTop="30dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="Full name*"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_full_name"
+            android:layout_below="@id/register_textview_full_name"
+            android:layout_marginTop="5dp"
+            android:text="please enter your user name"
+            android:padding="6dp"
+            android:background="@drawable/boarder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_email"
+            android:layout_below="@id/register_enter_full_name"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="Email*"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_email"
+            android:layout_below="@id/register_textview_email"
+            android:layout_marginTop="1dp"
+            android:text="please enter your email"
+            android:padding="6dp"
+            android:background="@drawable/boarder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_birthday"
+            android:layout_below="@id/register_enter_email"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="Date of birth(dd/mm/yyyy)*"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_birthday"
+            android:layout_below="@id/register_textview_birthday"
+            android:layout_marginTop="1dp"
+            android:text="please enter your birthday"
+            android:padding="6dp"
+            android:background="@drawable/boarder"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_gender"
+            android:layout_below="@id/register_enter_birthday"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="Gender"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_gender_group"
+            android:orientation="horizontal"
+            android:layout_below="@id/register_textview_gender">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_enter_gender_female"
+                android:text="female"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_enter_gender_male"
+                android:layout_marginLeft="10dp"
+                android:text="male"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_mobile"
+            android:layout_below="@id/register_enter_gender_group"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="Mobile*"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_mobile"
+            android:layout_below="@id/register_textview_mobile"
+            android:layout_marginTop="1dp"
+            android:text="please enter your mobile number"
+            android:padding="6dp"
+            android:background="@drawable/boarder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_password"
+            android:layout_below="@id/register_enter_mobile"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="Password*"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_password"
+            android:layout_below="@id/register_textview_password"
+            android:layout_marginTop="1dp"
+            android:text="please enter your password"
+            android:padding="6dp"
+            android:background="@drawable/boarder"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_textview_confirm_password"
+            android:layout_below="@id/register_enter_password"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="#555555"
+            android:text="confirm password*"
+            android:textAppearance="@style/MaterialAlertDialog.Material3.Title.Panel"
+            android:padding="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_enter_confirm_password"
+            android:layout_below="@id/register_textview_confirm_password"
+            android:layout_marginTop="1dp"
+            android:text="confirm your password"
+            android:padding="6dp"
+            android:background="@drawable/boarder"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</ScrollView>
