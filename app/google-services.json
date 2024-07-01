@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679040844793",
+    "project_id": "tourportal-3c228",
+    "storage_bucket": "tourportal-3c228.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679040844793:android:d6dc99f630c08410e63328",
+        "android_client_info": {
+          "package_name": "com.example.tourportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANO6tIzxxA7RuGlQS898oAQq0awr9Qlts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
