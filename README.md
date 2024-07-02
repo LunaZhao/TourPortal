@@ -20,10 +20,10 @@ think about how to use a cloud as server and continue to work on.
 
 
 here i lise some tasks which i thought about, please feel free to add or adjust them :)
-- create register function
+- create register function  --- add the firebase into APP, you have to check it, if you can use firebase in china!
 - create login function
-- layout for filling user information such like username, password, birthday, tel, email etc
-- layout to view user information
+- layout for filling user information such like username, password, birthday, tel, email etc  --- this is done, in the end, we have to check what kind of information will be filled
+- layout to view user information 
 - edit user information
 - layout of history of all activities
 - layout of event 
