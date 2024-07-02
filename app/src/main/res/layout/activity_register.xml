@@ -198,6 +198,15 @@
             android:padding="6dp"
             android:background="@drawable/boarder"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_button"
+            android:layout_below="@id/register_enter_confirm_password"
+            android:layout_marginTop="1dp"
+            android:text="Register"/>
+
+
         <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

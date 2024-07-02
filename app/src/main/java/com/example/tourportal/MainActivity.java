@@ -19,32 +19,35 @@ public class MainActivity extends AppCompatActivity {
 
 
         // open login activity
-        Button buttonlogin = findViewById(R.id.button_login);
-
-        buttonlogin.setOnClickListener(new View.OnClickListener(){
+        Button buttonLogin = findViewById(R.id.button_login);
+        /*
+        buttonLogin.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v)
                 {
+                    // todo LoginActivity has to be implementet
                     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
                 }
             });
+         */
 
-        // todo LoginActivity has to be implementet
+
 
         // open register activity
-        Button buttonregister = findViewById(R.id.button_register);
+        Button buttonRegister = findViewById(R.id.button_register);
 
-        buttonregister.setOnClickListener(new View.OnClickListener(){
+        buttonRegister.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v)
            {
+               // todo RegisterActivity has to be implementet
                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                startActivity(intent);
            }
         });
 
-        // todo RegisterActivity has to be implementet
+
 
 
     }

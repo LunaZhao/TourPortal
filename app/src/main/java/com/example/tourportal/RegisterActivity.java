@@ -1,7 +1,9 @@
 package com.example.tourportal;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -12,6 +14,13 @@ import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.google.android.gms.common.internal.Objects;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -44,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
         registerRadioGroupGender = findViewById(R.id.register_enter_gender_group);
         registerRadioGroupGender.clearCheck();
 
-        Button buttonRegister = findViewById(R.id.button_register);
+        Button buttonRegister = findViewById(R.id.register_button);
 
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,7 +151,29 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void registerUser(String textFullName, String textDoB, String textEmail, String textGender, String textPassword, String textConfirmPassword, String textMobile) {
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        auth.createUserWithEmailAndPassword(textEmail, textPassword).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful())
+                {
+                    Toast.makeText(RegisterActivity.this, "user registered successfully", Toast.LENGTH_LONG).show();
+                    FirebaseUser firebaseUser = auth.getCurrentUser();
+
+                    firebaseUser.sendEmailVerification();
+
+                    /* // open user profile after successful registration
+                    Intent intent = new Intent(RegisterActivity.this, UserProileActivity.class);
+                    // to prevent user from returning back to register activity on pressing back button after registration
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finish();       // to close register activity
+                     */
+
+                }
 
 
+            }
+        });
     }
 }
