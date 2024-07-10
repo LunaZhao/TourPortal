@@ -1,6 +1,4 @@
 24.06.2024
-today we start to implement a APP for DAV Karlsruhe TourPortal, to help us to get some knowledge of develope the android application
-deadline 07.2025 :)
 
 software to install
 - android studio
