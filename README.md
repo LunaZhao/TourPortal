@@ -39,3 +39,6 @@ here i lise some tasks which i thought about, please feel free to add or adjust 
 - selected activities to export
 - notification button for newly published event, user could shoose get notification or not, by using emaill or message 
 - notification on selected catagory event
+
+
+[Link Text](https://github.com/LunaZhao/JS.git)  
